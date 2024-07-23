@@ -1,13 +1,15 @@
-/* Basic styles for the entire website */
+/* Basic styles for the website */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
-    background-color: #f9f9f9;
+    background-color: #ffcc00; /* Yellow theme */
     padding: 20px;
     text-align: center;
 }
@@ -21,12 +23,41 @@ a {
     text-decoration: none;
 }
 
+/* Styles for high-contrast mode */
+@media (forced-colors: active) {
+    body {
+        background-color: Window;
+        color: WindowText;
+    }
+
+    a {
+        color: Highlight;
+        text-decoration: underline; /* Ensure links are distinguishable */
+    }
+
+    header {
+        background-color: Window;
+        color: WindowText;
+    }
+    
+    /* Additional high-contrast mode adjustments */
+    .hero-section {
+        background-color: Window;
+    }
+    
+    .hero-text {
+        background-color: Highlight;
+        color: WindowText;
+    }
+    
+    /* Adjust other elements as necessary for high-contrast mode */
+}
+
 /* Styles for the hero section */
 .hero-section {
     position: relative;
     text-align: center;
     color: white;
-    background-color: #ffcc00; /* Yellow theme */
     padding: 50px;
 }
 
