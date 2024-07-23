@@ -1,0 +1,78 @@
+/* Basic styles for the entire website */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    color: #ff9900; /* Button color */
+    text-decoration: none;
+}
+
+/* Styles for the hero section */
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #ffcc00; /* Yellow theme */
+    padding: 50px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.5; /* Medium opacity */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cta-button {
+    background-color: #ff9900; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Styles for the founders' section */
+.founders {
+    padding: 50px;
+    background-color: #f9f9f9; /* Light background for readability */
+}
+
+.founder {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.founder-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.founder-bio {
+    max-width: 600px;
+}
