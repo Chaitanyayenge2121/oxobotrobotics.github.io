@@ -72,10 +72,12 @@ header nav ul li a:hover {
 }
 
 .tagline {
-    font-size: 2.5rem; /* Larger text for better visibility */
+    font-size: 3rem; /* Larger text for better visibility */
+    font-weight: bold;
     background: linear-gradient(45deg, #ffcc00, #009900); /* Yellow and Green gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Enhance readability */
 }
 
 /* Styles for the sections */
@@ -95,16 +97,19 @@ ul {
     padding-left: 20px;
 }
 
-footer {
-    background-color: #ffcc00; /* Yellow theme */
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Styles for the About Us section */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Founders' section styles */
+.about-text {
+    max-width: 800px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 .founders {
     display: flex;
     flex-direction: column;
@@ -115,6 +120,7 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    max-width: 800px;
 }
 
 .founder-photo {
@@ -122,8 +128,19 @@ footer {
     height: 150px;
     border-radius: 50%;
     margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
 }
 
 .founder-bio {
     max-width: 600px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #ffcc00; /* Yellow theme */
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
