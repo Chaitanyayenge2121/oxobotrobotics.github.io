@@ -55,12 +55,15 @@ nav a {
     opacity: 0.5; /* Medium opacity for the background image */
 }
 
-.hero-text h1 {
-    font-size: 2.5rem;
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.tagline {
+    font-size: 3rem; /* Larger text for better visibility */
     font-weight: bold;
-    background: linear-gradient(45deg, #ffcc00, #009900); /* Yellow and Green gradient */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Full opacity for text */
+    color: #ffcc00; /* Yellow color */
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     margin-bottom: 20px;
 }
@@ -95,12 +98,12 @@ h2 {
 .founder {
     text-align: center;
     margin: 20px;
-    max-width: 300px; /* Limit width */
+    max-width: 250px; /* Adjusted width */
 }
 
 .founder img {
-    width: 120px; /* Resize image */
-    height: 120px; /* Resize image */
+    width: 150px; /* Adjusted image size */
+    height: 150px; /* Adjusted image size */
     border-radius: 50%;
     margin-bottom: 10px;
 }
