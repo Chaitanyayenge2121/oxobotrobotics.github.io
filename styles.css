@@ -76,9 +76,9 @@ header nav ul li a:hover {
     font-weight: bold;
     background: linear-gradient(45deg, #ffcc00, #009900); /* Brighter yellow and green gradient */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; /* Ensure the background gradient is used */
     text-shadow: 
-        4px 4px 8px rgba(0, 0, 0, 0.8), /* Stronger shadow for enhanced contrast */
+        0 0 10px rgba(0, 0, 0, 0.7), /* Stronger shadow for enhanced contrast */
         0 0 15px rgba(255, 255, 255, 0.9); /* Increased white glow for higher brightness */
     text-align: center;
     padding: 20px; /* Add padding to prevent edge overlap */
@@ -86,6 +86,9 @@ header nav ul li a:hover {
     margin: 0 auto; /* Center align the tagline */
     max-width: 80%; /* Prevent text from stretching too wide */
     line-height: 1.2; /* Improve readability */
+    color: #fff; /* Ensure text color is white for contrast against the background */
+    background-clip: text;
+    -webkit-background-clip: text; /* Use the gradient background */
 }
 
 /* Styles for the sections */
