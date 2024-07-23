@@ -23,6 +23,13 @@ a {
     text-decoration: none;
 }
 
+/* Cross-browser appearance styling */
+button, input, select, textarea {
+    appearance: none; /* Standard property for modern browsers */
+    -moz-appearance: none; /* Firefox-specific */
+    -webkit-appearance: none; /* Safari and Chrome-specific */
+}
+
 /* Styles for high-contrast mode */
 @media (forced-colors: active) {
     body {
