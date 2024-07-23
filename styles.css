@@ -14,50 +14,19 @@ header {
     text-align: center;
 }
 
-h1, h2, h3 {
-    margin: 0;
+header nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-a {
-    color: #ff9900; /* Button color */
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: #333;
     text-decoration: none;
-}
-
-/* Cross-browser appearance styling */
-button, input, select, textarea {
-    appearance: none; /* Standard property for modern browsers */
-    -moz-appearance: none; /* Firefox-specific */
-    -webkit-appearance: none; /* Safari and Chrome-specific */
-}
-
-/* Styles for high-contrast mode */
-@media (forced-colors: active) {
-    body {
-        background-color: Window;
-        color: WindowText;
-    }
-
-    a {
-        color: Highlight;
-        text-decoration: underline; /* Ensure links are distinguishable */
-    }
-
-    header {
-        background-color: Window;
-        color: WindowText;
-    }
-    
-    /* Additional high-contrast mode adjustments */
-    .hero-section {
-        background-color: Window;
-    }
-    
-    .hero-text {
-        background-color: Highlight;
-        color: WindowText;
-    }
-    
-    /* Adjust other elements as necessary for high-contrast mode */
 }
 
 /* Styles for the hero section */
@@ -92,6 +61,16 @@ button, input, select, textarea {
     border-radius: 5px;
 }
 
+/* Styles for the sections */
+section {
+    padding: 50px;
+    background-color: #fff;
+}
+
+h2 {
+    color: #333;
+}
+
 /* Styles for the founders' section */
 .founders {
     padding: 50px;
@@ -113,4 +92,13 @@ button, input, select, textarea {
 
 .founder-bio {
     max-width: 600px;
+}
+
+footer {
+    background-color: #ffcc00; /* Yellow theme */
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
