@@ -52,12 +52,13 @@ header nav ul li a:hover {
     text-align: center;
     color: white;
     padding: 50px 15px;
+    background-color: #f5f5f5; /* Light background */
 }
 
 .hero-image {
     width: 100%;
     height: auto;
-    opacity: 0.7; /* Medium opacity */
+    opacity: 0.8; /* Medium opacity for background image */
 }
 
 .hero-text {
@@ -65,13 +66,13 @@ header nav ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 20px;
     border-radius: 10px;
 }
 
 .tagline {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Larger text for better visibility */
     background: linear-gradient(45deg, #ffcc00, #009900); /* Yellow and Green gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
