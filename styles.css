@@ -10,8 +10,14 @@ body {
 
 header {
     background-color: #ffcc00; /* Yellow theme */
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 header h1 {
@@ -22,6 +28,7 @@ header h1 {
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 20px 0 0;
 }
 
 header nav ul li {
@@ -32,6 +39,11 @@ header nav ul li {
 header nav ul li a {
     color: #333;
     text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #009900; /* Green color for hover */
 }
 
 /* Styles for the hero section */
@@ -39,7 +51,7 @@ header nav ul li a {
     position: relative;
     text-align: center;
     color: white;
-    padding: 50px;
+    padding: 50px 15px;
 }
 
 .hero-image {
@@ -53,32 +65,21 @@ header nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 20px;
     border-radius: 10px;
 }
 
-.hero-text h2 {
-    margin: 0;
+.tagline {
     font-size: 2rem;
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-}
-
-.cta-button {
-    background-color: #ff9900; /* Button color */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
+    background: linear-gradient(45deg, #ffcc00, #009900); /* Yellow and Green gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Styles for the sections */
 section {
-    padding: 50px;
+    padding: 50px 15px;
     background-color: #fff;
     margin-bottom: 20px;
 }
@@ -93,37 +94,20 @@ ul {
     padding-left: 20px;
 }
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
+footer {
+    background-color: #ffcc00; /* Yellow theme */
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
-form button {
-    background-color: #ff9900;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Styles for the founders' section */
+/* Founders' section styles */
 .founders {
-    padding: 50px;
-    background-color: #f5f5f5; /* Light background for readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .founder {
@@ -134,20 +118,11 @@ form button {
 
 .founder-photo {
     width: 150px;
-    height: auto;
+    height: 150px;
     border-radius: 50%;
     margin-right: 20px;
 }
 
 .founder-bio {
     max-width: 600px;
-}
-
-footer {
-    background-color: #ffcc00; /* Yellow theme */
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
