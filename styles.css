@@ -72,12 +72,20 @@ header nav ul li a:hover {
 }
 
 .tagline {
-    font-size: 3rem; /* Larger text for better visibility */
+    font-size: 3.5rem; /* Larger text for even better visibility */
     font-weight: bold;
     background: linear-gradient(45deg, #ffcc00, #009900); /* Yellow and Green gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Enhance readability */
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.6), /* Increase shadow size and opacity */
+        0 0 10px rgba(255, 255, 255, 0.8); /* Add a white glow for enhanced visibility */
+    text-align: center;
+    padding: 20px; /* Add some padding to ensure the text does not touch the edges */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    margin: 0 auto; /* Center align the tagline */
+    max-width: 80%; /* Prevent text from stretching too wide */
+}
 }
 
 /* Styles for the sections */
